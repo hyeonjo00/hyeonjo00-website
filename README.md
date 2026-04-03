@@ -1,4 +1,4 @@
-<h1 align="center">Hyeonjo Kim</h1>
+<img width="1202" height="282" alt="image" src="https://github.com/user-attachments/assets/83b55bb7-0f7c-480c-96f3-74d5d351cc22" /><h1 align="center">Hyeonjo Kim</h1>
 
 <p align="center">
   Frontend Developer · AI Web Applications · Vibe Coding
@@ -19,9 +19,30 @@ Passionate about integrating AI into real-world services and improving user expe
 
 ## Tech Stack
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=react,nextjs,js,tailwind" />
+### 💻 Frontend
+<p>
+  <img src="https://skillicons.dev/icons?i=react,nextjs,js,ts,tailwind" />
 </p>
+
+### ⚙️ Backend & API
+<p>
+  <img src="https://skillicons.dev/icons?i=nodejs" />
+</p>
+
+### 🤖 AI & Data
+<p>
+  <img src="https://skillicons.dev/icons?i=python" />
+  OpenAI API
+</p>
+
+### ☁️ Deployment & Tools
+<p>
+  <img src="https://skillicons.dev/icons?i=vercel,git,github,vscode" />
+</p>
+
+### 🧩 Others
+- Chrome Extension (Manifest v3)
+- Diff Algorithm (npm diff)
 
 ---
 
