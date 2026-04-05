@@ -1,97 +1,108 @@
 <h1 align="center">Hyeonjo Kim</h1>
 
 <p align="center">
-  Frontend Developer · AI Web Applications · Vibe Coding
+  Frontend Developer focused on AI-powered web products
 </p>
 
 <p align="center">
-  <a href="mailto:lion0110@naver.com">Email</a> · +82 10-2813-3325
+  <a href="mailto:lion0110@naver.com">lion0110@naver.com</a>
 </p>
 
 ---
 
 ## About
 
-Frontend Developer focused on building interactive and scalable web applications.  
-Passionate about integrating AI into real-world services and improving user experience.
+Frontend developer building production-ready web applications with a strong focus on AI integration, UX, and scalable frontend architecture.
+
+Interested in turning practical problems into deployable products using Next.js, OpenAI API, browser extensions, and modern frontend tooling.
 
 ---
 
 ## Tech Stack
 
-### 💻 Frontend
+### Frontend
 <p>
   <img src="https://skillicons.dev/icons?i=react,nextjs,js,ts,tailwind" />
 </p>
 
-### ⚙️ Backend & API
+### Backend & API
 <p>
   <img src="https://skillicons.dev/icons?i=nodejs" />
 </p>
 
-### 🤖 AI & Data
+### AI & Data
 <p>
   <img src="https://skillicons.dev/icons?i=python" />
   OpenAI API
 </p>
 
-### 💻 Programming Languages
+### Languages
 <p>
   <img src="https://skillicons.dev/icons?i=c,java,python" />
 </p>
 
-### ☁️ Deployment & Tools
+### Deployment & Tools
 <p>
   <img src="https://skillicons.dev/icons?i=vercel,git,github,vscode" />
 </p>
-
-### 🧩 Others
-- Chrome Extension (Manifest v3)
-- Diff Algorithm (npm diff)
 
 ---
 
 ## Projects
 
-### 🚀 ToS Change Tracker (AI + Chrome Extension)
+### Chart Insight Assistant
+AI-powered stock and crypto chart screenshot analysis SaaS.
 
-A web service and Chrome extension that detects changes in Terms of Service / Privacy Policies  
-and analyzes them using AI.
+Built an end-to-end MVP that allows users to upload chart screenshots, run AI-powered market bias analysis, and review structured trade insights.
 
-**🔹 Features**
-- Automatic diff detection of policy changes
-- AI-based summarization and risk analysis
-- One-click analysis via Chrome extension
+**Highlights**
+- Screenshot upload with drag-and-drop UX
+- OpenAI Vision-based chart interpretation
+- Structured output: bias, confidence, entry zone, invalidation, take-profit
+- Session history saved with localStorage
+- AdSense-ready monetization structure
+- Production deployment on Vercel
 
-**🔹 Tech Stack**
-- Next.js (App Router)
-- OpenAI API
-- Chrome Extension (Manifest v3)
-- Vercel
+**Tech**  
+Next.js, TypeScript, Tailwind CSS, OpenAI API, Vercel, Google AdSense
 
-**🔹 Links**
-- 🌐 Demo: https://tos-change-tracker.vercel.app/
-- 💻 GitHub: https://github.com/hyeonjo00/tos-change-tracker
+**Links**  
+Demo: https://chart-insight-assistant.vercel.app  
+GitHub: https://github.com/hyeonjo00/chart-insight-assistant
 
 ---
 
-### 🤖 AI Code Review Assistant
+### ToS Change Tracker
+Service + Chrome extension for tracking Terms of Service and privacy policy updates.
 
-An AI-powered tool that reviews code and suggests improvements.
+**Highlights**
+- Automatic diff detection
+- AI summarization and risk analysis
+- Chrome extension one-click workflow
 
-**🔹 Features**
-- Code quality analysis
-- Performance & readability suggestions
-- Multi-language support
+**Tech**  
+Next.js, OpenAI API, Chrome Extension (Manifest v3), Vercel
 
-**🔹 Tech Stack**
-- Next.js
-- OpenAI API
-- Tailwind CSS
+**Links**  
+Demo: https://tos-change-tracker.vercel.app/  
+GitHub: https://github.com/hyeonjo00/tos-change-tracker
 
-**🔹 Links**
-- 🌐 Demo: https://ai-code-review-lac-seven.vercel.app/
-- 💻 GitHub: https://github.com/hyeonjo00/ai-code-review
+---
+
+### AI Code Review Assistant
+AI-assisted code review tool for fast quality feedback.
+
+**Highlights**
+- Readability and performance suggestions
+- Multi-language code support
+- Production-ready review UI
+
+**Tech**  
+Next.js, OpenAI API, Tailwind CSS
+
+**Links**  
+Demo: https://ai-code-review-lac-seven.vercel.app/  
+GitHub: https://github.com/hyeonjo00/ai-code-review
 
 ---
 
@@ -99,21 +110,4 @@ An AI-powered tool that reviews code and suggests improvements.
 
 <p align="center">
   <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=hyeonjo00&show_icons=true&theme=tokyonight" />
-  <br/>
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=hyeonjo00&layout=compact&theme=tokyonight" />
 </p>
-
----
-
-## Contact
-
-<p align="center">
-  📧 lion0110@naver.com <br/>
-  📱 +82 10-2813-3325
-</p>
-
----
-
-## Goal
-
-> Building AI-powered web services that deliver real value.
