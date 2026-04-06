@@ -124,30 +124,22 @@ Java, JavaFX, FXML, CSS
 ## Gameplay Showcase
 
 ### Premium Table Theme
-Demonstrates the premium casino-style JavaFX table UI and initial game flow.
-
-![Theme Demo](./screenshots/blackjack_starttheme.gif)
+![Theme Demo](https://raw.githubusercontent.com/hyeonjo00/blackjack-engine-java/main/screenshots/balckjack_starttheme.gif)
 
 ---
 
 ### Hit / Stand Decision Flow
-Shows real-time AI recommendation updates during player decisions.
-
-![Hit Stand Demo](./screenshots/blackjack_hitstand.gif)
+![Hit Stand Demo](https://raw.githubusercontent.com/hyeonjo00/blackjack-engine-java/main/screenshots/balckjack_hitstand.gif)
 
 ---
 
 ### Double Down Action
-Demonstrates doubled bet handling and EV-based decision support.
-
-![Double Down Demo](./screenshots/blackjack_doubledown.gif)
+![Double Down Demo](https://raw.githubusercontent.com/hyeonjo00/blackjack-engine-java/main/screenshots/balckjack_doubledown.gif)
 
 ---
 
 ### Split Hand Management
-Shows multi-hand gameplay, active hand switching, and AI split analysis.
-
-![Split Demo](./screenshots/blackjack_split.gif)
+![Split Demo](https://raw.githubusercontent.com/hyeonjo00/blackjack-engine-java/main/screenshots/balckjack_split.gif)
 
 **Links**  
 GitHub: https://github.com/hyeonjo00/blackjack-engine-java
