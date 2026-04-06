@@ -106,6 +106,46 @@ GitHub: https://github.com/hyeonjo00/ai-code-review
 
 ---
 
+### Premium JavaFX Blackjack Simulator
+
+A premium desktop blackjack simulator built with JavaFX, featuring real-time strategy analysis, advanced gameplay actions, and a casino-style animated UI.
+
+**Highlights**
+- Real-time AI strategy analysis
+- Hit / Stand / Double / Split support
+- Expected EV, bust risk, and dealer bust chance display
+- Session save / load and stats export
+- Premium casino-style table UI with animated dealing flow
+- Multi-hand split support and recommendation accuracy tracking
+
+**Tech**  
+Java, JavaFX, FXML, CSS
+
+**Gameplay Showcase**
+
+**Premium Table Theme**  
+Demonstrates the premium casino-style JavaFX table UI and initial game flow.
+
+![Theme Demo](screenshots/blackjack_starttheme.gif)
+
+**Hit / Stand Decision Flow**  
+Shows real-time AI recommendation updates during player decisions.
+
+![Hit Stand Demo](screenshots/blackjack_hitstand.gif)
+
+**Double Down Action**  
+Demonstrates doubled bet handling and EV-based decision support.
+
+![Double Down Demo](screenshots/blackjack_doubledown.gif)
+
+**Split Hand Management**  
+Shows multi-hand gameplay, active hand switching, and AI split analysis.
+
+![Split Demo](screenshots/blackjack_split.gif)
+
+**Links**  
+GitHub: https://github.com/hyeonjo00/blackjack-engine-java
+
 ## GitHub Stats
 
 <p align="center">
