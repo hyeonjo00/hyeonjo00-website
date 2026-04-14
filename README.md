@@ -141,6 +141,39 @@ Java, JavaFX, FXML, CSS
 ### Split Hand Management
 ![Split Demo](https://raw.githubusercontent.com/hyeonjo00/blackjack-engine-java/main/screenshots/balckjack_split.gif)
 
+## MiniDB Studio
+
+> A lightweight database management studio built in pure C.  
+> This project combines a reusable storage engine, B+ Tree indexing, WAL-style recovery, and a native raylib desktop UI.
+
+<p align="center">
+  <a href="https://github.com/hyeonjo00/c-mini-db-engine">
+    <img src="https://raw.githubusercontent.com/hyeonjo00/c-mini-db-engine/main/docs/studio-overview.svg" alt="MiniDB Studio overview" width="100%" />
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/C-C11-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C11" />
+  <img src="https://img.shields.io/badge/UI-raylib-1F2937?style=for-the-badge" alt="raylib" />
+  <img src="https://img.shields.io/badge/Engine-B%2B%20Tree%20%2B%20WAL-60A5FA?style=for-the-badge" alt="B+ Tree and WAL" />
+</p>
+
+- Two-layer architecture with a pure C11 storage engine and a separate native desktop UI
+- Hash indexes on `id` and `department`, plus B+ Tree indexes on `id` and `age`
+- Lightweight query optimizer for exact lookups, range scans, and ordered traversal
+- CSV snapshot + WAL replay recovery model
+- Studio-style desktop workflow with a SQL workspace, result grid, index explorer, storage browser, and performance dashboard
+
+<p align="center">
+  <a href="https://github.com/hyeonjo00/c-mini-db-engine">
+    <img src="https://raw.githubusercontent.com/hyeonjo00/c-mini-db-engine/main/docs/studio-benchmark.svg" alt="MiniDB Studio benchmark dashboard" width="100%" />
+  </a>
+</p>
+
+**Links**
+- Repository: https://github.com/hyeonjo00/c-mini-db-engine
+- README: https://github.com/hyeonjo00/c-mini-db-engine/blob/main/README.md
+- Whitepaper (EN): https://github.com/hyeonjo00/c-mini-db-engine/blob/main/docs/minidb-studio-algorithm-whitepaper-en.pdf
 
 ## Documentation
 
