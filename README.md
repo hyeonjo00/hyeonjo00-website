@@ -29,28 +29,36 @@ Recently, I have been working with Next.js, TypeScript, OpenAI API, Claude, Java
 
 ### Frontend
 <p>
-  <img src="https://skillicons.dev/icons?i=react,nextjs,js,ts,tailwind" />
+  <img src="https://skillicons.dev/icons?i=react,nextjs,js,ts,tailwind,html,css" />
 </p>
 
-### Backend & API
+### Backend & Database
 <p>
-  <img src="https://skillicons.dev/icons?i=nodejs" />
+  <img src="https://skillicons.dev/icons?i=nodejs,postgres,prisma" />
 </p>
 
-### AI & Data
+### AI & Automation
 <p>
-  <img src="https://skillicons.dev/icons?i=python" />
-  OpenAI API
+  <img src="https://img.shields.io/badge/OpenAI_API-111827?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI API" />
+  <img src="https://img.shields.io/badge/Claude-CC785C?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude" />
 </p>
 
-### Languages
+### Desktop & Systems
 <p>
-  <img src="https://skillicons.dev/icons?i=c,java,python" />
+  <img src="https://skillicons.dev/icons?i=java,c" />
+  <img src="https://img.shields.io/badge/JavaFX-1F2937?style=for-the-badge&logo=openjdk&logoColor=white" alt="JavaFX" />
+  <img src="https://img.shields.io/badge/raylib-111827?style=for-the-badge&logo=c&logoColor=white" alt="raylib" />
+</p>
+
+### Browser & Extensions
+<p>
+  <img src="https://img.shields.io/badge/Chrome_Extension-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Chrome Extension" />
+  <img src="https://img.shields.io/badge/Manifest_V3-111827?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Manifest V3" />
 </p>
 
 ### Deployment & Tools
 <p>
-  <img src="https://skillicons.dev/icons?i=vercel,git,github,vscode" />
+  <img src="https://skillicons.dev/icons?i=vercel,git,github,vscode,npm" />
 </p>
 
 ---
