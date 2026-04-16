@@ -1,7 +1,7 @@
 <h1 align="center">Hyeonjo Kim</h1>
 
 <p align="center">
-  Building polished software products across web, AI, tools, and desktop systems.
+  Software builder creating polished products across web, AI, developer tools, browser extensions, desktop apps, and systems programming.
 </p>
 
 <p align="center">
@@ -21,7 +21,6 @@ I build practical software products that turn ideas into usable, deployable syst
 My work spans frontend applications, AI-powered products, developer tools, browser extensions, desktop software, and low-level systems. I care about clean UX, reliable architecture, fast iteration, and shipping projects that feel complete enough to be used in the real world.
 
 Recently, I have been working with Next.js, TypeScript, OpenAI API, Claude, JavaFX, Chrome Extension, Prisma, PostgreSQL, C, and Java.
-
 
 ---
 
