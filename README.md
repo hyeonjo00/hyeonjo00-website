@@ -107,22 +107,52 @@ Next.js, TypeScript, Tailwind CSS, Prisma, PostgreSQL, OpenAI API, Vercel
 ### Chart Insight Assistant
 AI-powered stock and crypto chart screenshot analysis SaaS.
 
-Built an end-to-end MVP that allows users to upload chart screenshots, run AI-powered market bias analysis, and review structured trade insights.
+Chart Insight Assistant is a Next.js application that lets users upload market chart screenshots, run cautious OpenAI-powered scenario analysis, and review structured trading insights in a clean dark UI.
+
+<p align="center">
+  <a href="https://chart-insight-assistant.vercel.app">
+    <img src="https://raw.githubusercontent.com/hyeonjo00/chart-insight-assistant/main/public/readme/home.png" alt="Chart Insight Assistant home preview" width="100%" />
+  </a>
+</p>
 
 **Highlights**
-- Screenshot upload with drag-and-drop UX
-- OpenAI Vision-based chart interpretation
-- Structured output: bias, confidence, entry zone, invalidation, take-profit
-- Session history saved with localStorage
-- AdSense-ready monetization structure
-- Production deployment on Vercel
+- Drag-and-drop chart screenshot upload
+- Image preview with PNG, JPG, JPEG, and WEBP validation
+- Server-side OpenAI chart analysis API route
+- Structured analysis output: bias, confidence, entry zone, invalidation zone, take-profit targets, and summary
+- Cautious scenario-based market interpretation without guaranteed predictions
+- Local analysis history saved with `localStorage`
+- Clean dark-themed responsive UI
+- Google AdSense-ready monetization structure
+- `ads.txt` verification support
+- English / Korean / Japanese README documentation
+
+#### Product Screens
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/hyeonjo00/chart-insight-assistant/main/public/readme/analyze.png" alt="Chart Insight Assistant upload screen" width="49%" />
+  <img src="https://raw.githubusercontent.com/hyeonjo00/chart-insight-assistant/main/public/readme/analysis-result.png" alt="Chart Insight Assistant analysis result" width="49%" />
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/hyeonjo00/chart-insight-assistant/main/public/readme/history.png" alt="Chart Insight Assistant history screen" width="100%" />
+</p>
 
 **Tech**  
 Next.js, TypeScript, Tailwind CSS, OpenAI API, Vercel, Google AdSense
 
+**Architecture**
+- `app/api/analyze/route.ts` handles server-side OpenAI requests
+- `components/chart-upload-panel.tsx` manages upload, preview, API call, result rendering, and local history saving
+- `lib/analysis-history.ts` stores completed analysis results in browser `localStorage`
+- `components/ad-banner.tsx` prepares reusable AdSense-ready ad slots
+
 **Links**
 - Demo: https://chart-insight-assistant.vercel.app
 - GitHub: https://github.com/hyeonjo00/chart-insight-assistant
+- English README: https://github.com/hyeonjo00/chart-insight-assistant/blob/main/README.en.md
+- Korean README: https://github.com/hyeonjo00/chart-insight-assistant/blob/main/README.ko.md
+- Japanese README: https://github.com/hyeonjo00/chart-insight-assistant/blob/main/README.ja.md
 
 ---
 
