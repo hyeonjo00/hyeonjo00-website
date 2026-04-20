@@ -173,20 +173,35 @@ Next.js, OpenAI API, Chrome Extension (Manifest v3), Vercel
 
 ---
 
-### AI Code Review Assistant
-AI-assisted code review tool for fast quality feedback.
+## AI Code Review
 
-**Highlights**
-- Readability and performance suggestions
-- Multi-language code support
-- Production-ready review UI
+![AI Code Review screenshot](/screenshots/ai-code-review.png)
 
-**Tech**  
-Next.js, OpenAI API, Tailwind CSS
+AI Code Review is a Next.js web application that uses the OpenAI API to analyze JavaScript or TypeScript code and return structured feedback. Users can paste code, request a review, and receive issues, improvement ideas, and a revised code example in a clean two-panel interface.
 
-**Links**
-- Demo: https://ai-code-review-lac-seven.vercel.app/
-- GitHub: https://github.com/hyeonjo00/ai-code-review
+### Key Features
+
+- Submit pasted code for AI review
+- Receive issues, improvements, and revised code
+- Copy review output to the clipboard
+- Load sample code for quick demos
+- Protect the OpenAI API key with a server-side route handler
+- Includes README screenshot and technical whitepaper documentation
+
+### Tech Stack
+
+Next.js 16, React 19, TypeScript, Tailwind CSS, OpenAI Responses API, react-syntax-highlighter
+
+### Technical Whitepapers
+
+- [English Technical Whitepaper](/docs/TECHNICAL_WHITEPAPER.en.md)
+- [Korean Technical Whitepaper](/docs/TECHNICAL_WHITEPAPER.ko.md)
+
+### Links
+
+- Repository: [GitHub](https://github.com/hyeonjo00/ai-code-review)
+- Demo: [https://ai-code-review-lac-seven.vercel.app/](https://ai-code-review-lac-seven.vercel.app/)
+
 
 ---
 
