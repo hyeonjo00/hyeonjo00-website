@@ -156,20 +156,46 @@ Next.js, TypeScript, Tailwind CSS, OpenAI API, Vercel, Google AdSense
 
 ---
 
-### ToS Change Tracker
-Service + Chrome extension for tracking Terms of Service and privacy policy updates.
+# ToS Change Tracker
 
-**Highlights**
-- Automatic diff detection
-- AI summarization and risk analysis
-- Chrome extension one-click workflow
+![ToS Change Tracker Screenshot](https://raw.githubusercontent.com/hyeonjo00/tos-change-tracker/main/public/readme/home.png)
 
-**Tech**  
-Next.js, OpenAI API, Chrome Extension (Manifest v3), Vercel
+ToS Change Tracker is an AI-assisted Next.js prototype for reviewing changes in terms of service, privacy policies, and other user-facing policy documents. A user enters a public policy URL, the server fetches the page, normalizes the HTML into readable text, and generates a line-level diff. When an OpenAI API key is configured, the app also summarizes the changes and provides a Low, Medium, or High risk assessment.
 
-**Links**
-- Demo: https://tos-change-tracker.vercel.app/
-- GitHub: https://github.com/hyeonjo00/tos-change-tracker
+## Key Features
+
+- Policy URL input with server-side HTML fetching
+- Text normalization by removing scripts, styles, and HTML tags
+- Line-level document diffing with the `diff` package
+- OpenAI Responses API integration for change summaries and risk analysis
+- Dark and light theme support
+- English, Korean, and Japanese README and whitepaper documentation
+- Real application screenshot for portfolio presentation
+
+## Tech Stack
+
+- Next.js App Router
+- React
+- TypeScript
+- Tailwind CSS
+- OpenAI Responses API
+- diff
+
+## Technical Whitepaper
+
+- [English Whitepaper](https://github.com/hyeonjo00/tos-change-tracker/blob/main/docs/tos-change-tracker-technical-whitepaper-en.md)
+- [Korean Whitepaper](https://github.com/hyeonjo00/tos-change-tracker/blob/main/docs/tos-change-tracker-technical-whitepaper-ko.md)
+- [Japanese Whitepaper](https://github.com/hyeonjo00/tos-change-tracker/blob/main/docs/tos-change-tracker-technical-whitepaper-ja.md)
+
+## Links
+
+- Demo: [https://tos-change-tracker.vercel.app/](https://tos-change-tracker.vercel.app/)
+- GitHub: [https://github.com/hyeonjo00/tos-change-tracker](https://github.com/hyeonjo00/tos-change-tracker)
+
+## Project Highlight
+
+This project demonstrates the core pipeline of a policy-change monitoring product in a small, transparent prototype. The current version focuses on URL fetching, text normalization, diff generation, and AI-assisted summarization, while leaving a clear path toward database-backed snapshots and scheduled monitoring.
+
 
 ---
 
