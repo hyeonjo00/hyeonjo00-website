@@ -81,7 +81,7 @@
 ## 프로젝트
 
 ### Chat Paper AI
-카카오톡 대화와 AI 대화 로그를 학술 논문 형식의 문서로 변환하는 한국어 우선 AI SaaS 플랫폼입니다.
+카카오톡, 인스타그램 DM, LINE, AI 대화 로그를 학술 논문 형식의 리서치 문서로 변환하는 한국어 중심 AI SaaS 플랫폼입니다.
 
 <p align="center">
   <a href="https://chat-paper-platform-iota.vercel.app/">
@@ -90,21 +90,31 @@
 </p>
 
 **주요 기능**
-- 카카오톡 `.zip` / `.txt` 업로드 및 대화 파싱
-- AI 기반 대화 분석과 학술 논문 생성
-- 생성된 논문 인사이트를 확인하는 연구 대시보드
-- 저널 스타일의 학술 논문 리더
-- 로그인 없이 바로 사용하는 게스트 우선 흐름
-- 한국어 / 일본어 / 영어 UI 지원
-- 다크 모드 대응 반응형 SaaS 인터페이스
-- 원본 업로드 파일을 영구 저장하지 않는 개인정보 보호 흐름
+- KakaoTalk `.zip` / `.txt`, Instagram DM, LINE, AI 대화 로그 업로드 지원
+- 대화 데이터를 파싱, 익명화한 뒤 AI 논문 생성 파이프라인으로 처리
+- 제목, 초록, 서론, 연구 방법, 결과, 논의, 결론으로 구성된 학술형 문서 생성
+- 한국어 / 영어 / 일본어 UI 및 논문 생성 흐름 지원
+- 로그인 없이 사용할 수 있는 게스트 기반 워크플로우
+- 생성 결과를 확인할 수 있는 리서치 대시보드와 진행 상태 UI
+- 저널 스타일의 논문 리더와 export 중심 UX
+- 원본 업로드 파일을 영구 저장하지 않는 개인정보 보호 중심 설계
 
-**기술**  
-Next.js, TypeScript, Tailwind CSS, Prisma, PostgreSQL, OpenAI API, Vercel
+**백엔드 설계**
+- Next.js API Routes, Redis, BullMQ, Prisma, PostgreSQL, 독립 Node.js Worker 기반 비동기 생성 파이프라인 구축
+- 업로드/분석 API에서 DB 접근 전 Redis preflight rate limit을 먼저 실행해 게스트 기반 DB DoS 위험 완화
+- 긴 AI 논문 생성 작업은 API에서 직접 실행하지 않고 BullMQ 큐와 Worker를 통해 처리
+- PostgreSQL `idempotencyKey`와 BullMQ `jobId`에 동일한 SHA-256 키를 사용해 중복 생성 방지
+- Prisma Serializable transaction으로 작업 quota, Paper 생성, Job 생성을 원자적으로 처리
+- Worker에 hard timeout, OpenAI 요청 timeout, exponential backoff + jitter retry, graceful shutdown 적용
+- Redis 상태를 확인한 뒤 stuck job을 복구하여 중복 실행 위험을 줄임
+- ZIP 업로드는 Content-Length 검증, entry 수 제한, 파일별 크기 제한, 총 압축 해제 크기 제한으로 방어
+
+**기술 스택**  
+Next.js, TypeScript, Tailwind CSS, Prisma, PostgreSQL, Redis, BullMQ, OpenAI API, Node.js Worker, Vercel, Fly.io
 
 **문서**
-- [기술백서 EN](https://github.com/hyeonjo00/chat-paper-platform/blob/main/docs/chat-paper-ai-technical-whitepaper-en.md)
-- [기술백서 KO](https://github.com/hyeonjo00/chat-paper-platform/blob/main/docs/chat-paper-ai-technical-whitepaper-ko.md)
+- [기술 백서 (EN)](https://github.com/hyeonjo00/chat-paper-platform/blob/main/docs/chat-paper-ai-technical-whitepaper-en.md)
+- [기술 백서 (KO)](https://github.com/hyeonjo00/chat-paper-platform/blob/main/docs/chat-paper-ai-technical-whitepaper-ko.md)
 
 **링크**
 - Demo: https://chat-paper-platform-iota.vercel.app/
