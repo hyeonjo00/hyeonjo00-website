@@ -73,7 +73,7 @@ Recently, I have been working with Next.js, TypeScript, OpenAI API, Claude, Java
 ## Projects
 
 ### Chat Paper AI
-Korean-first AI SaaS platform that turns KakaoTalk and AI conversation logs into academic-style research papers.
+Korean-first AI SaaS platform that turns KakaoTalk, Instagram DM, LINE, and AI conversation logs into academic-style research papers.
 
 <p align="center">
   <a href="https://chat-paper-platform-iota.vercel.app/">
@@ -82,17 +82,27 @@ Korean-first AI SaaS platform that turns KakaoTalk and AI conversation logs into
 </p>
 
 **Highlights**
-- KakaoTalk `.zip` / `.txt` upload and conversation parsing
-- AI-powered conversation analysis and academic paper generation
-- Research dashboard for generated paper insights
-- Journal-style academic paper reader
-- Guest-first workflow without login friction
-- Korean / Japanese / English UI support
-- Dark mode ready responsive SaaS interface
-- Privacy-conscious flow with raw uploads not permanently stored
+- Uploads KakaoTalk `.zip` / `.txt`, Instagram DM, LINE, and AI conversation logs
+- Parses, anonymizes, and stores conversation messages before AI generation
+- Generates full academic papers with title, abstract, introduction, methods, results, discussion, and conclusion
+- Supports Korean / English / Japanese UI and paper generation flow
+- Guest-first workflow without mandatory login
+- Research dashboard with generated paper insights and progress states
+- Journal-style academic paper reader with export-focused UX
+- Privacy-conscious design: raw upload files are not permanently stored
+
+**Backend Engineering**
+- Built an async generation pipeline with Next.js API Routes, Redis, BullMQ, Prisma, PostgreSQL, and a standalone Node.js worker
+- Upload and analyze routes use Redis preflight rate limiting before database access to reduce DB DoS risk
+- Long-running paper generation is queued with BullMQ instead of blocking API requests
+- Uses deterministic SHA-256 idempotency keys shared by PostgreSQL and BullMQ `jobId`
+- Prisma Serializable transactions protect job quota checks and duplicate paper creation
+- Worker includes hard job timeout, OpenAI request timeout, retry with exponential backoff and jitter, and graceful shutdown handling
+- Stuck job recovery checks Redis job state before requeueing to avoid duplicate execution
+- ZIP upload validation includes content-length checks, entry count limits, per-entry caps, and total uncompressed size limits
 
 **Tech**  
-Next.js, TypeScript, Tailwind CSS, Prisma, PostgreSQL, OpenAI API, Vercel
+Next.js, TypeScript, Tailwind CSS, Prisma, PostgreSQL, Redis, BullMQ, OpenAI API, Node.js Worker, Vercel, Fly.io
 
 **Documentation**
 - [Technical Whitepaper (EN)](https://github.com/hyeonjo00/chat-paper-platform/blob/main/docs/chat-paper-ai-technical-whitepaper-en.md)
